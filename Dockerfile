@@ -10,6 +10,7 @@ RUN cd /usr/src/app \
 WORKDIR /usr/src/app
 RUN git clone https://github.com/GlacierSG/nefnir.git
 
+WORKDIR /usr/src/app/nefnir
 COPY . .
 
 EXPOSE 8080
